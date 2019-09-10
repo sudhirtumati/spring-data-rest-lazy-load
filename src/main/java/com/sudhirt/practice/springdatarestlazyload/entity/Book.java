@@ -1,7 +1,6 @@
 package com.sudhirt.practice.springdatarestlazyload.entity;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
