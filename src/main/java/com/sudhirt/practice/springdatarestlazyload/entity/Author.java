@@ -1,6 +1,7 @@
 package com.sudhirt.practice.springdatarestlazyload.entity;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -31,4 +32,11 @@ public class Author {
     private LocalDate dateOfBirth;
     @OneToMany(mappedBy = "author")
     private List<Book> books;
+
+    public void addBook(Book book) {
+        if(books == null) {
+            books = new ArrayList<>();
+        }
+        books.add(book);
+    }
 }

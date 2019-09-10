@@ -1,6 +1,7 @@
 package com.sudhirt.practice.springdatarestlazyload.entity;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,7 +27,7 @@ public class Book {
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid")
     private String id;
-    private String name;
+    private String title;
     private String isbn;
     private Double price;
     private LocalDate publishedDate;
